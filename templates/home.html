@@ -1,0 +1,386 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - DoctorConnect - Professional Websites for Doctors{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Transform Your</span>
+            <span class="title-highlight">Medical Practice</span>
+            <span class="title-line">Online</span>
+          </h1>
+          <p class="hero-subtitle">
+            Professional websites, SEO optimization, and digital marketing solutions designed specifically for doctors and healthcare professionals.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Doctors Served</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Patient Satisfaction</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Support</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="{% url 'contact' %}" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              Get Started Today
+            </a>
+            <a href="#services" class="btn btn-secondary">
+              <i class="fas fa-play"></i>
+              Watch Demo
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Doctor using digital technology">
+            <div class="floating-card card-1">
+              <i class="fas fa-chart-line"></i>
+              <span>SEO Growth</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-users"></i>
+              <span>Patient Reach</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Indicators -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-content">
+        <span class="trust-label">Trusted by leading medical professionals:</span>
+        <div class="trust-logos">
+          <div class="trust-logo">🏥 Mayo Clinic</div>
+          <div class="trust-logo">👨‍⚕️ AMA</div>
+          <div class="trust-logo">🏆 Healthcare Awards</div>
+          <div class="trust-logo">⭐ 5-Star Rated</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Comprehensive Digital Solutions</h2>
+        <p class="section-subtitle">Everything you need to establish a strong online presence and grow your medical practice</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-laptop-medical"></i>
+          </div>
+          <h3>Professional Website Design</h3>
+          <p>Custom, responsive websites that reflect your medical expertise and build patient trust.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Mobile-first design</li>
+            <li><i class="fas fa-check"></i> HIPAA compliant</li>
+            <li><i class="fas fa-check"></i> Fast loading</li>
+          </ul>
+          <div class="service-price">
+            <span class="price">From $999</span>
+            <span class="period">/one-time</span>
+          </div>
+        </div>
+
+        <div class="service-card featured">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">
+            <i class="fas fa-search-plus"></i>
+          </div>
+          <h3>SEO Optimization</h3>
+          <p>Get found by patients searching for your medical services in your area.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Local SEO focus</li>
+            <li><i class="fas fa-check"></i> Google My Business</li>
+            <li><i class="fas fa-check"></i> Patient reviews</li>
+          </ul>
+          <div class="service-price">
+            <span class="price">From $299</span>
+            <span class="period">/month</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3>Appointment Systems</h3>
+          <p>Streamline patient scheduling with integrated booking systems.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Online booking</li>
+            <li><i class="fas fa-check"></i> SMS reminders</li>
+            <li><i class="fas fa-check"></i> Calendar sync</li>
+          </ul>
+          <div class="service-price">
+            <span class="price">From $199</span>
+            <span class="period">/month</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Targeted campaigns to reach potential patients and grow your practice.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Social media ads</li>
+            <li><i class="fas fa-check"></i> Email campaigns</li>
+            <li><i class="fas fa-check"></i> Analytics tracking</li>
+          </ul>
+          <div class="service-price">
+            <span class="price">From $399</span>
+            <span class="period">/month</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+ {% comment %} <!-- Services Section -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Comprehensive Digital Solutions</h2>
+      <p class="section-subtitle">
+        Everything you need to establish a strong online presence and grow your medical practice
+      </p>
+    </div>
+
+    <div class="services-grid">
+      {% for service in services %}
+      <div class="service-card {% if service.featured_service %}featured{% endif %}">
+        
+        {% if service.popular_service %}
+        <div class="service-badge">Most Popular</div>
+        {% endif %}
+
+        <div class="service-icon">
+          <i class="{{ service.icon_class }}"></i>
+        </div>
+        <h3>{{ service.name }}</h3>
+        <p>{{ service.short_description }}</p>
+
+        <ul class="service-features">
+          {% if service.features %}
+            {% for feature in service.features %}
+            <li><i class="fas fa-check"></i> {{ feature }}</li>
+            {% endfor %}
+          {% endif %}
+        </ul>
+
+        <div class="service-price">
+          <span class="price">From ${{ service.base_price }}</span>
+          <span class="period">/{{ service.price_period }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section> {% endcomment %}
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Doctors Choose DoctorConnect</h2>
+        <p class="section-subtitle">We understand the unique needs of medical professionals</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>HIPAA Compliant</h3>
+          <p>All our solutions meet healthcare privacy standards and regulations.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Quick Setup</h3>
+          <p>Get your website live in as little as 48 hours with our streamlined process.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>Medical Support</h3>
+          <p>Our team understands healthcare and speaks your language.</p>
+        </div>
+        
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Proven Results</h3>
+          <p>See measurable improvements in patient inquiries and practice growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Success Stories</h2>
+        <p class="section-subtitle">See how we've helped doctors transform their online presence</p>
+      </div>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Cardiology Practice Website">
+            <div class="portfolio-overlay">
+              <div class="portfolio-details">
+                <h4>Dr. Sarah Johnson</h4>
+                <p>Cardiology Practice</p>
+                <span class="result">+300% Patient Inquiries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Dental Clinic Website">
+            <div class="portfolio-overlay">
+              <div class="portfolio-details">
+                <h4>Bright Smile Dental</h4>
+                <p>Dental Clinic</p>
+                <span class="result">+250% Online Bookings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pediatric Practice Website">
+            <div class="portfolio-overlay">
+              <div class="portfolio-details">
+                <h4>Dr. Michael Chen</h4>
+                <p>Pediatric Practice</p>
+                <span class="result">+400% Local Search</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Doctors Say</h2>
+        <p class="section-subtitle">Real feedback from medical professionals we've helped</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"DoctorConnect transformed our practice's online presence. We're now getting 5x more patient inquiries and our website looks incredibly professional."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Dr. Emily Rodriguez">
+            <div class="author-info">
+              <h4>Dr. Emily Rodriguez</h4>
+              <span>Family Medicine</span>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The SEO optimization has been incredible. We're now ranking #1 for our specialty in our city, and patients are finding us easily."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Dr. James Wilson">
+            <div class="author-info">
+              <h4>Dr. James Wilson</h4>
+              <span>Orthopedic Surgery</span>
+            </div>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Medical Practice?</h2>
+        <p>Join hundreds of doctors who have already taken their practice online with DoctorConnect</p>
+        <div class="cta-actions">
+          <a href="{% url 'contact' %}" class="btn btn-primary btn-large">
+            <i class="fas fa-calendar-check"></i>
+            Schedule Free Consultation
+          </a>
+          <a href="tel:+15551234567" class="btn btn-secondary btn-large">
+            <i class="fas fa-phone"></i>
+            Call Now: (555) 123-4567
+          </a>
+        </div>
+        <div class="cta-guarantee">
+          <i class="fas fa-shield-check"></i>
+          <span>30-day money-back guarantee • No long-term contracts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

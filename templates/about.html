@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us - DoctorConnect - Professional Websites for Doctors{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>About DoctorConnect</h1>
+        <p>Empowering medical professionals with cutting-edge digital solutions since 2020</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <div class="container">
+      <div class="mission-content">
+        <div class="mission-text">
+          <h2>Our Mission</h2>
+          <p>At DoctorConnect, we believe every medical professional deserves a world-class online presence. Our mission is to bridge the gap between traditional healthcare and modern digital technology, ensuring doctors can focus on what matters most - patient care.</p>
+          <p>We understand the unique challenges medical professionals face in today's digital landscape. From HIPAA compliance to patient privacy concerns, we've built our entire platform around healthcare-specific needs.</p>
+        </div>
+        <div class="mission-image">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Medical team collaboration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story">
+    <div class="container">
+      <div class="story-content">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Doctor using digital technology">
+        </div>
+        <div class="story-text">
+          <h2>Our Story</h2>
+          <p>Founded by a team of healthcare professionals and digital experts, DoctorConnect was born from a simple observation: while technology was transforming every industry, many medical practices were still struggling with outdated websites and limited online visibility.</p>
+          <p>We started with a simple goal: create digital solutions that medical professionals actually want to use. Solutions that are secure, compliant, and effective at growing their practice.</p>
+          <div class="story-stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Doctors Served</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Medical Specialties</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Core Values</h2>
+        <p>The principles that guide everything we do</p>
+      </div>
+      
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Trust & Security</h3>
+          <p>We prioritize patient privacy and data security above all else. Every solution we build meets or exceeds healthcare industry standards.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Patient-First</h3>
+          <p>We design with patients in mind, ensuring they can easily find, contact, and trust your medical practice online.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Innovation</h3>
+          <p>We stay ahead of digital trends and healthcare technology to provide cutting-edge solutions for modern medical practices.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Partnership</h3>
+          <p>We view our relationship as a long-term partnership, committed to your success and growth in the digital space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meet Our Team</h2>
+        <p>Healthcare experts and digital professionals working together for your success</p>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Dr. Sarah Chen">
+          </div>
+          <div class="member-info">
+            <h3>Dr. Sarah Chen</h3>
+            <span class="position">Chief Medical Officer</span>
+            <p>Board-certified physician with 15+ years of clinical experience. Ensures all our solutions meet healthcare standards.</p>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Michael Rodriguez">
+          </div>
+          <div class="member-info">
+            <h3>Michael Rodriguez</h3>
+            <span class="position">Head of Technology</span>
+            <p>Former Google engineer with expertise in healthcare technology and patient data security.</p>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Emily Watson">
+          </div>
+          <div class="member-info">
+            <h3>Emily Watson</h3>
+            <span class="position">Creative Director</span>
+            <p>Healthcare design specialist who creates beautiful, patient-friendly interfaces that build trust and credibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="certifications">
+    <div class="container">
+      <div class="section-header">
+        <h2>Certifications & Compliance</h2>
+        <p>We maintain the highest standards in healthcare technology</p>
+      </div>
+      
+      <div class="cert-grid">
+        <div class="cert-item">
+          <div class="cert-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>HIPAA Compliant</h3>
+          <p>All our solutions meet strict healthcare privacy regulations</p>
+        </div>
+        
+        <div class="cert-item">
+          <div class="cert-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3>SOC 2 Type II</h3>
+          <p>Highest level of security certification for data protection</p>
+        </div>
+        
+        <div class="cert-item">
+          <div class="cert-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Google Partner</h3>
+          <p>Certified Google partner for healthcare marketing solutions</p>
+        </div>
+        
+        <div class="cert-item">
+          <div class="cert-icon">
+            <i class="fas fa-shield-check"></i>
+          </div>
+          <h3>SSL Secure</h3>
+          <p>Bank-level encryption for all patient data and communications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Work With Us?</h2>
+        <p>Join hundreds of medical professionals who trust DoctorConnect with their digital presence</p>
+        <div class="cta-actions">
+          <a href="{% url 'contact' %}" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i>
+            Schedule Free Consultation
+          </a>
+          <a href="tel:+15551234567" class="btn btn-secondary">
+            <i class="fas fa-phone"></i>
+            Call (555) 123-4567
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
