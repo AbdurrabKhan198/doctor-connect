@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-a&+7wzf^^a2&@3b5ofw-b=*bzcp2#x(^a20kft&hjpzc%xrrgz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.mediwellcare.com','mediwellcare.com','13.235.83.71']
+ALLOWED_HOSTS = ['www.mediwellcare.com','mediwellcare.com','15.207.109.149']
 
 
 # Application definition
